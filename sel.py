@@ -9,7 +9,7 @@ driver.implicitly_wait(5)
 
 driver.get(url)
 driver.find_element_by_xpath('//*[@id="_evidon-accept-button"]').click()
-driver.find_element_by_xpath('//div[@class="dialog_close"]').click()
+#driver.find_element_by_xpath('//div[@class="dialog_close"]').click()#
 
 select = Select(driver.find_element_by_id('category_sb'))
 select.select_by_value('MUSIC')
